@@ -1,261 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <title>LHSC | Strategic Oversight for Foreign Investors in Brazil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Independent strategic oversight, governance supervision, and senior advisory for foreign investors operating in Brazil." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://lhsc.srv.br/" />
-
-  <!-- Basic SEO & Language -->
-  <link rel="alternate" hreflang="en" href="https://lhsc.srv.br/?lang=en" />
-  <link rel="alternate" hreflang="pt" href="https://lhsc.srv.br/?lang=pt" />
-  <link rel="alternate" hreflang="es" href="https://lhsc.srv.br/?lang=es" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luiz Henrique Cabreira – Governança Independente</title>
   <style>
-    :root {
-      --text: #111;
-      --muted: #555;
-      --border: #e5e5e5;
-      --bg: #ffffff;
-      --accent: #0a5fa5;
-      --maxw: 960px;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.55;
-    }
-
-    header, section, footer {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 32px 20px;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand img {
-      width: 44px;
-      height: 44px;
-    }
-
-    nav a {
-      margin-left: 16px;
-      text-decoration: none;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    nav a:hover { color: var(--text); }
-
-    h1 { font-size: 32px; margin-bottom: 12px; }
-    h2 { font-size: 22px; margin-top: 40px; }
-    h3 { font-size: 18px; margin-top: 24px; }
-
-    p { max-width: 780px; }
-    ul { max-width: 780px; padding-left: 18px; }
-
-    .muted { color: var(--muted); }
-
-    .lang {
-      font-size: 13px;
-      cursor: pointer;
-      color: var(--muted);
-    }
-
-    .lang strong { color: var(--text); }
-
-    footer {
-      border-top: 1px solid var(--border);
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .contact-box {
-      border: 1px solid var(--border);
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 14px;
-      border: 1px solid var(--text);
-      color: var(--text);
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    a.button:hover {
-      background: #f5f5f5;
-    }
+    :root { --azul: #1a3b5d; --azul-claro: #2c5a9e; --cinza: #f4f6f9; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--cinza); color: #333; line-height: 1.6; }
+    header { background: var(--azul); color: white; padding: 1.5rem 1rem; text-align: center; }
+    nav { background: white; padding: .8rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 10; }
+    nav a { margin: 0 .7rem; color: var(--azul); font-weight: 600; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .conteudo { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .bio { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,.08); }
+    .contato { margin-top: 1.5rem; font-size: .95rem; }
+    footer { text-align: center; padding: 1.5rem; background: var(--azul); color: white; font-size: .85rem; }
+    @media (max-width: 480px) { body { font-size: .95rem; } nav { padding: .5rem; } .bio { padding: 1.5rem; } }
   </style>
 </head>
-
 <body>
-<header>
-  <div class="brand">
-    <img src="assets/lhsc-avatar.jpg" alt="LHSC" />
-    <strong>LHSC</strong>
-  </div>
-
-  <div class="lang">
-    <span onclick="setLang('en')">EN</span> |
-    <span onclick="setLang('pt')">PT</span> |
-    <span onclick="setLang('es')">ES</span>
-  </div>
-</header>
-
-<section id="content"></section>
-
-<footer>
-  <p>© LHSC — Strategic Oversight & Advisory</p>
-  <p>Brazil · <a href="https://lhsc.srv.br">lhsc.srv.br</a></p>
-</footer>
-
-<script>
-const content = {
-  en: `
-    <h1>Strategic Oversight for Foreign Investors in Brazil</h1>
-    <p class="muted">
-      Independent executive oversight, governance supervision, and senior advisory for institutional investors operating in Brazil.
-    </p>
-
-    <h2>Who We Are</h2>
-    <p>
-      LHSC is a Brazil-based strategic advisory firm providing independent oversight and senior-level advisory services to foreign investors.
-      We act as a trusted local extension of boards, investment committees, and executive leadership.
-    </p>
-
-    <h2>What We Do</h2>
-    <ul>
-      <li><strong>Strategic Oversight & Executive Supervision</strong> — Independent monitoring of Brazilian operations, partners, and governance.</li>
-      <li><strong>Strategic Advisory</strong> — Senior guidance across market entry, governance, joint ventures, growth, restructuring, and exit.</li>
-      <li><strong>Local Representation (Selective)</strong> — Trusted local presence subject to strict due diligence.</li>
-    </ul>
-
-    <h2>Who We Serve</h2>
-    <p>
-      We work exclusively with institutional and sophisticated investors, including multinational corporations, investment funds,
-      family offices, and sovereign or quasi-sovereign entities.
-    </p>
-
-    <h2>Why LHSC</h2>
-    <p>
-      Brazil presents opportunity and complexity. LHSC reduces information asymmetry, strengthens governance,
-      and protects strategic intent without operational micromanagement.
-    </p>
-
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>Email: <a href="mailto:contact@lhsc.srv.br">contact@lhsc.srv.br</a></p>
-      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+  <header>
+    <h1>Luiz Henrique Cabreira</h1>
+    <p>Supervisão Independente & Governança Estratégica – Brasil</p>
+  </header>
+  <nav>
+    <a href="#pt">Português</a>
+    <a href="#en">English</a>
+    <a href="#es">Español</a>
+  </nav>
+  <section class="conteudo">
+    <div id="pt" class="bio">
+      <h2>O que faço</h2>
+      <p>Acompanho investidores estrangeiros no Brasil com supervisão estratégica independente, governança e apoio executivo de alto nível. Sou a extensão local de conselhos, comitês e diretores que precisam de clareza, controle e alinhamento em ambientes complexos.</p>
+      <p>Meu foco é na camada estratégica — não na execução diária. Inclui oversight de operações, SPEs, joint ventures e ambientes regulados.</p>
+      <h2>Experiência</h2>
+      <p>Mais de cinco anos com Keppel e MaxCasa: monitorava investidores internacionais, fiscalizava gestores e liderei o MaxCasa BLX – 240 unidades no Panamby, São Paulo.</p>
+      <h2>Como funciona</h2>
+      <p>Mandatos seletivos: oversight de longo prazo, consultoria estratégica ou representação local. Discrição total, independência garantida.</p>
+      <div class="contato">
+        <p><strong>Contato</strong><br>
+        WhatsApp: <a href="https://wa.me/5511981011148" style="color: var(--azul-claro);">+55 11 981.011.148</a><br>
+        Email: <a href="mailto:falacomigo@lhsc.srv.br" style="color: var(--azul-claro);">falacomigo@lhsc.srv.br</a></p>
+      </div>
     </div>
-  `,
-
-  pt: `
-    <h1>Supervisão Estratégica para Investidores Estrangeiros no Brasil</h1>
-    <p class="muted">
-      Supervisão executiva independente, governança e assessoria sênior para investidores institucionais no Brasil.
-    </p>
-
-    <h2>Quem Somos</h2>
-    <p>
-      A LHSC é uma consultoria estratégica baseada no Brasil, focada em supervisão independente e assessoria executiva
-      para investidores estrangeiros.
-    </p>
-
-    <h2>O Que Fazemos</h2>
-    <ul>
-      <li><strong>Supervisão Estratégica</strong> — Monitoramento independente de operações, parceiros e governança.</li>
-      <li><strong>Assessoria Estratégica</strong> — Apoio sênior em entrada de mercado, governança e investimentos.</li>
-      <li><strong>Representação Local (Seletiva)</strong> — Presença local confiável, sujeita a diligência rigorosa.</li>
-    </ul>
-
-    <h2>Para Quem Trabalhamos</h2>
-    <p>
-      Atendemos exclusivamente investidores institucionais e sofisticados, incluindo multinacionais,
-      fundos de investimento e family offices.
-    </p>
-
-    <h2>Por Que LHSC</h2>
-    <p>
-      Atuamos para reduzir riscos, aumentar clareza e proteger o capital e a intenção estratégica
-      sem interferir na execução operacional.
-    </p>
-
-    <h2>Contato</h2>
-    <div class="contact-box">
-      <p>Email: <a href="mailto:contato@lhsc.srv.br">contato@lhsc.srv.br</a></p>
-      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+    <div id="en" class="bio" style="display:none;">
+      <h2>What I do</h2>
+      <p>I provide foreign investors with independent strategic oversight, governance supervision, and senior-level advisory support in Brazil.</p>
+      <p>I act as a trusted local extension for boards, investment committees, and executives—ensuring clarity, control, and alignment in complex markets.</p>
+      <p>Focus is strategic: oversight of operations, SPEs, JVs, and regulated environments—no day-to-day management.</p>
+      <h2>Experience</h2>
+      <p>Five-plus years with Keppel and MaxCasa: monitored international investors, oversaw managers, led MaxCasa BLX (240 units, Panamby, SP).</p>
+      <h2>How it works</h2>
+      <p>Selective engagements: long-term oversight, strategic advisory, or local representation—always discreet, independent, due-diligence ready.</p>
+      <div class="contato">
+        <p><strong>Contact</strong><br>
+        WhatsApp: <a href="https://wa.me/5511981011148" style="color: var(--azul-claro);">+55 11 981.011.148</a><br>
+        Email: <a href="mailto:talktome@lhsc.srv.br" style="color: var(--azul-claro);">talktome@lhsc.srv.br</a></p>
+      </div>
     </div>
-  `,
-
-  es: `
-    <h1>Supervisión Estratégica para Inversores Extranjeros en Brasil</h1>
-    <p class="muted">
-      Supervisión ejecutiva independiente, gobernanza y asesoría senior para inversores institucionales en Brasil.
-    </p>
-
-    <h2>Quiénes Somos</h2>
-    <p>
-      LHSC es una firma de asesoría estratégica con sede en Brasil, dedicada a la supervisión independiente
-      y al acompañamiento ejecutivo de inversores extranjeros.
-    </p>
-
-    <h2>Qué Hacemos</h2>
-    <ul>
-      <li><strong>Supervisión Estratégica</strong> — Monitoreo independiente de operaciones y gobernanza.</li>
-      <li><strong>Asesoría Estratégica</strong> — Apoyo senior en entrada al mercado y estructura de inversiones.</li>
-      <li><strong>Representación Local (Selectiva)</strong> — Presencia local confiable con debida diligencia.</li>
-    </ul>
-
-    <h2>A Quién Servimos</h2>
-    <p>
-      Trabajamos exclusivamente con inversores institucionales y sofisticados, incluyendo corporaciones multinacionales
-      y fondos de inversión.
-    </p>
-
-    <h2>Por Qué LHSC</h2>
-    <p>
-      Reducimos la asimetría de información, fortalecemos la gobernanza y protegemos el capital
-      sin interferir en la ejecución operativa.
-    </p>
-
-    <h2>Contacto</h2>
-    <div class="contact-box">
-      <p>Email: <a href="mailto:contacto@lhsc.srv.br">contacto@lhsc.srv.br</a></p>
-      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+    <div id="es" class="bio" style="display:none;">
+      <h2>Qué hago</h2>
+      <p>Ofrezco supervisión estratégica independiente, gobernanza y asesoría ejecutiva de alto nivel a inversores extranjeros que operan en Brasil.</p>
+      <p>Soy la extensión local de consejos, comités y directivos: garantizo claridad, control y alineación en entornos complejos.</p>
+      <p>Me enfoco en la capa estratégica — no en la ejecución diaria —: supervisión de operaciones, SPEs, JVs y entornos regulados.</p>
+      <h2>Experiencia</h2>
+      <p>Más de cinco años con Keppel y MaxCasa: monitoreé inversores internacionales, supervisé gestores, lideré MaxCasa BLX (240 unidades, Panamby, SP).</p>
+      <h2>Cómo funciona</h2>
+      <p>Mandatos selectivos: supervisión a largo plazo, asesoría estratégica o representación local — siempre discreto e independiente.</p>
+      <div class="contato">
+        <p><strong>Contacto</strong><br>
+        WhatsApp: <a href="https://wa.me/5511981011148" style="color: var(--azul-claro);">+55 11 981.011.148</a><br>
+        Email: <a href="mailto:hablame@lhsc.srv.br" style="color: var(--azul-claro);">hablame@lhsc.srv.br</a></p>
+      </div>
     </div>
-  `
-};
-
-function setLang(lang) {
-  document.documentElement.lang = lang;
-  document.getElementById("content").innerHTML = content[lang];
-  history.replaceState(null, "", "?lang=" + lang);
-}
-
-const params = new URLSearchParams(window.location.search);
-setLang(params.get("lang") || "en");
-</script>
-</body>
-</html>
+  </section>
+  <footer>
+    &copy; 2026 Luiz Henrique Cabreira – Todos
