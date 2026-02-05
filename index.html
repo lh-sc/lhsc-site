@@ -1,98 +1,261 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LHSC | Strategic Proxy & Operational Oversight</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Montserrat', sans-serif; }
-        h1, h2 { font-family: 'Playfair Display', serif; }
-        .signature { font-family: 'cursive'; color: #1e3a8a; } /* Representando sua caligrafia */
-    </style>
+  <meta charset="UTF-8" />
+  <title>LHSC | Strategic Oversight for Foreign Investors in Brazil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Independent strategic oversight, governance supervision, and senior advisory for foreign investors operating in Brazil." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lhsc.srv.br/" />
+
+  <!-- Basic SEO & Language -->
+  <link rel="alternate" hreflang="en" href="https://lhsc.srv.br/?lang=en" />
+  <link rel="alternate" hreflang="pt" href="https://lhsc.srv.br/?lang=pt" />
+  <link rel="alternate" hreflang="es" href="https://lhsc.srv.br/?lang=es" />
+
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+      --accent: #0a5fa5;
+      --maxw: 960px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+
+    header, section, footer {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+    }
+
+    nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--text); }
+
+    h1 { font-size: 32px; margin-bottom: 12px; }
+    h2 { font-size: 22px; margin-top: 40px; }
+    h3 { font-size: 18px; margin-top: 24px; }
+
+    p { max-width: 780px; }
+    ul { max-width: 780px; padding-left: 18px; }
+
+    .muted { color: var(--muted); }
+
+    .lang {
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .lang strong { color: var(--text); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .contact-box {
+      border: 1px solid var(--border);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--text);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    a.button:hover {
+      background: #f5f5f5;
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
 
-    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-blue-900">LHSC</div>
-            <div class="space-x-4 text-sm font-bold uppercase tracking-widest text-blue-900">
-                <a href="#en" class="hover:text-blue-600 transition">English</a>
-                <a href="#pt" class="hover:text-blue-600 transition">Português</a>
-                <a href="#es" class="hover:text-blue-600 transition">Español</a>
-            </div>
-        </div>
-    </nav>
+<body>
+<header>
+  <div class="brand">
+    <img src="assets/lhsc-avatar.jpg" alt="LHSC" />
+    <strong>LHSC</strong>
+  </div>
 
-    <section id="pt" class="pt-32 pb-20 px-6 max-w-5xl mx-auto border-b">
-        <h1 class="text-5xl mb-6 text-blue-900">Onde a Estratégia Global encontra a Execução Brasileira.</h1>
-        <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-            Atuamos como o **Proxy Estratégico** de investidores estrangeiros, garantindo que a visão internacional seja executada com precisão no terreno brasileiro.
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-8 mt-12">
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Shadow Management</h3>
-                <p class="text-slate-600">Tradução de balancetes contábeis em relatórios estratégicos de performance e risco.</p>
-            </div>
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Governança de JV</h3>
-                <p class="text-slate-600">Mediação entre sócios estrangeiros e locais para garantir o cumprimento de acordos.</p>
-            </div>
-        </div>
-        
-        <div class="mt-12 p-8 bg-blue-900 text-white rounded-xl">
-            <h2 class="text-3xl mb-4 text-white">Pronto para o próximo passo?</h2>
-            <p class="mb-6">Seja o dono, não apenas o investidor. Nós protegemos sua operação no Brasil.</p>
-            <a href="mailto:lcabreira@lhsc.srv.br" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-slate-200 transition">Fale com Luiz Henrique</a>
-        </div>
-    </section>
+  <div class="lang">
+    <span onclick="setLang('en')">EN</span> |
+    <span onclick="setLang('pt')">PT</span> |
+    <span onclick="setLang('es')">ES</span>
+  </div>
+</header>
 
-    <section id="en" class="pt-32 pb-20 px-6 max-w-5xl mx-auto border-b bg-slate-100">
-        <h1 class="text-5xl mb-6 text-blue-900">Where Global Strategy Meets Brazilian Execution.</h1>
-        <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-            We act as your **Strategic Proxy**, ensuring global interests are accurately translated and executed on the ground in Brazil.
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-8 mt-12">
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Strategic Proxy Services</h3>
-                <p class="text-slate-600">Board-level representation to safeguard international capital interests.</p>
-            </div>
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Operational Oversight</h3>
-                <p class="text-slate-600">Translating complex local data into clear, strategic performance insights.</p>
-            </div>
-        </div>
-        
-        <div class="mt-12 text-center">
-            <p class="italic text-lg">"Your Owner's Eye in Brazil."</p>
-            <p class="signature text-2xl mt-2">Luiz Henrique Salles Cabreira</p>
-        </div>
-    </section>
+<section id="content"></section>
 
-    <section id="es" class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
-        <h1 class="text-5xl mb-6 text-blue-900">Donde la Estrategia Global se une a la Ejecución Brasileña.</h1>
-        <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-            Actuamos como su **Proxy Estratégico**, asegurando que la visión internacional se ejecute con precisión en el mercado brasileño.
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-8 mt-12">
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Supervisión Operativa</h3>
-                <p class="text-slate-600">Traducción de informes contables complejos en análisis estratégicos de riesgo y desempeño.</p>
-            </div>
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="font-bold text-blue-900 mb-2">Gobernanza de Joint Ventures</h3>
-                <p class="text-slate-600">Mediación entre socios extranjeros y locales para asegurar el cumplimiento de acuerdos.</p>
-            </div>
-        </div>
-        
-        <footer class="mt-20 text-center text-slate-400 text-sm">
-            © 2026 LHSC Strategic Proxy | lhsc.srv.br | Jundiaí, Brazil
-        </footer>
-    </section>
+<footer>
+  <p>© LHSC — Strategic Oversight & Advisory</p>
+  <p>Brazil · <a href="https://lhsc.srv.br">lhsc.srv.br</a></p>
+</footer>
 
+<script>
+const content = {
+  en: `
+    <h1>Strategic Oversight for Foreign Investors in Brazil</h1>
+    <p class="muted">
+      Independent executive oversight, governance supervision, and senior advisory for institutional investors operating in Brazil.
+    </p>
+
+    <h2>Who We Are</h2>
+    <p>
+      LHSC is a Brazil-based strategic advisory firm providing independent oversight and senior-level advisory services to foreign investors.
+      We act as a trusted local extension of boards, investment committees, and executive leadership.
+    </p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li><strong>Strategic Oversight & Executive Supervision</strong> — Independent monitoring of Brazilian operations, partners, and governance.</li>
+      <li><strong>Strategic Advisory</strong> — Senior guidance across market entry, governance, joint ventures, growth, restructuring, and exit.</li>
+      <li><strong>Local Representation (Selective)</strong> — Trusted local presence subject to strict due diligence.</li>
+    </ul>
+
+    <h2>Who We Serve</h2>
+    <p>
+      We work exclusively with institutional and sophisticated investors, including multinational corporations, investment funds,
+      family offices, and sovereign or quasi-sovereign entities.
+    </p>
+
+    <h2>Why LHSC</h2>
+    <p>
+      Brazil presents opportunity and complexity. LHSC reduces information asymmetry, strengthens governance,
+      and protects strategic intent without operational micromanagement.
+    </p>
+
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>Email: <a href="mailto:contact@lhsc.srv.br">contact@lhsc.srv.br</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+    </div>
+  `,
+
+  pt: `
+    <h1>Supervisão Estratégica para Investidores Estrangeiros no Brasil</h1>
+    <p class="muted">
+      Supervisão executiva independente, governança e assessoria sênior para investidores institucionais no Brasil.
+    </p>
+
+    <h2>Quem Somos</h2>
+    <p>
+      A LHSC é uma consultoria estratégica baseada no Brasil, focada em supervisão independente e assessoria executiva
+      para investidores estrangeiros.
+    </p>
+
+    <h2>O Que Fazemos</h2>
+    <ul>
+      <li><strong>Supervisão Estratégica</strong> — Monitoramento independente de operações, parceiros e governança.</li>
+      <li><strong>Assessoria Estratégica</strong> — Apoio sênior em entrada de mercado, governança e investimentos.</li>
+      <li><strong>Representação Local (Seletiva)</strong> — Presença local confiável, sujeita a diligência rigorosa.</li>
+    </ul>
+
+    <h2>Para Quem Trabalhamos</h2>
+    <p>
+      Atendemos exclusivamente investidores institucionais e sofisticados, incluindo multinacionais,
+      fundos de investimento e family offices.
+    </p>
+
+    <h2>Por Que LHSC</h2>
+    <p>
+      Atuamos para reduzir riscos, aumentar clareza e proteger o capital e a intenção estratégica
+      sem interferir na execução operacional.
+    </p>
+
+    <h2>Contato</h2>
+    <div class="contact-box">
+      <p>Email: <a href="mailto:contato@lhsc.srv.br">contato@lhsc.srv.br</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+    </div>
+  `,
+
+  es: `
+    <h1>Supervisión Estratégica para Inversores Extranjeros en Brasil</h1>
+    <p class="muted">
+      Supervisión ejecutiva independiente, gobernanza y asesoría senior para inversores institucionales en Brasil.
+    </p>
+
+    <h2>Quiénes Somos</h2>
+    <p>
+      LHSC es una firma de asesoría estratégica con sede en Brasil, dedicada a la supervisión independiente
+      y al acompañamiento ejecutivo de inversores extranjeros.
+    </p>
+
+    <h2>Qué Hacemos</h2>
+    <ul>
+      <li><strong>Supervisión Estratégica</strong> — Monitoreo independiente de operaciones y gobernanza.</li>
+      <li><strong>Asesoría Estratégica</strong> — Apoyo senior en entrada al mercado y estructura de inversiones.</li>
+      <li><strong>Representación Local (Selectiva)</strong> — Presencia local confiable con debida diligencia.</li>
+    </ul>
+
+    <h2>A Quién Servimos</h2>
+    <p>
+      Trabajamos exclusivamente con inversores institucionales y sofisticados, incluyendo corporaciones multinacionales
+      y fondos de inversión.
+    </p>
+
+    <h2>Por Qué LHSC</h2>
+    <p>
+      Reducimos la asimetría de información, fortalecemos la gobernanza y protegemos el capital
+      sin interferir en la ejecución operativa.
+    </p>
+
+    <h2>Contacto</h2>
+    <div class="contact-box">
+      <p>Email: <a href="mailto:contacto@lhsc.srv.br">contacto@lhsc.srv.br</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511981101148">+55 11 98110-1148</a></p>
+    </div>
+  `
+};
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.getElementById("content").innerHTML = content[lang];
+  history.replaceState(null, "", "?lang=" + lang);
+}
+
+const params = new URLSearchParams(window.location.search);
+setLang(params.get("lang") || "en");
+</script>
 </body>
 </html>
